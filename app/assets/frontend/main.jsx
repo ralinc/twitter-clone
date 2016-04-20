@@ -7,3 +7,12 @@ class Main extends React.Component {
     );
   }
 }
+
+let documentReady = () => {
+  ReactDOM.render(
+    <Main />,
+    document.getElementById('react')
+  );
+};
+
+$(documentReady);
